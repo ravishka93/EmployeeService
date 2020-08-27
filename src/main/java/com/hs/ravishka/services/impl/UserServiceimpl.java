@@ -56,7 +56,8 @@ public class UserServiceimpl implements UserServices{
 		@Override
 		public Optional<UserDTO> findById(Integer id) {
 			// TODO Auto-generated method stub
-			return userRepository.findById(id);
+//			return Optional.ofNullable(userRepository.findById(id));
+			return null;
 			
 		}
 		
