@@ -13,7 +13,7 @@ public interface UserServices {
 		
 		String updateUser(UserDTO newUserData);
 		
-		Optional<UserDTO> findById(Integer id);
+		UserDTO findById(Integer id);
 	}
 
 

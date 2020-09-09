@@ -43,9 +43,9 @@ public class User {
 			return userServices.updateUser(newUserData);
 		}
 		
-		@RequestMapping("/find/{id}")
-		public Optional<UserDTO> getUserById(@PathVariable Integer id) {
-			return (Optional<UserDTO>) userServices.findById(id);
+		@RequestMapping(value = "/find/{id}",method = RequestMethod.GET)
+		public UserDTO getUserById(@PathVariable Integer id) {
+			return userServices.findById(id);
 		}
 
 }
